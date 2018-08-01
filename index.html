@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			/*outline: 1px solid #FFF;*/
+			box-sizing: border-box;
+		}
+		body { 
+			background-color: #13050f;
+			font-family: '微軟正黑體';
+
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.wrap {
+			width: 960px;
+			height: 100vh;
+			margin: 0 auto;
+			background: url(images/img_header.png) no-repeat left top,
+						url(images/img_footer.png) no-repeat left bottom;
+			background-size: contain, contain;
+			position: relative;
+		}
+		section {
+			font-size: 0;
+			padding-top: 22%;
+			position: relative;
+		}
+		.item {
+			display: inline-block;
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+		}
+		.item1 {
+			width: 33.3333%;
+		}
+		.item2 {
+			width: 11.1111%;
+		}
+		.item3 {
+			width: 27.733%;
+		}
+		.item4 {
+			width: 27.733%;
+		}
+		.item .symbol {
+			width: 50px;
+			height: 50px;
+			line-height: 40px;
+			position: absolute;
+			top: 0;
+			left: 10%;
+			border: 5px solid #3976d2;
+			background-color: #0d4680;
+			border-radius: 20px;
+		}
+		.item .symbol img { 
+			padding: 20%;
+			vertical-align: middle;
+		}
+		.item .symbol p {
+			color: #FFF;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			padding: 0;
+			margin: 10px -20px;
+			line-height: 1.8;
+		}
+		.item .symbol1 {
+			top: 15%;
+		}
+		.item .symbol2 {
+			top: 15%;
+			left: 55%;
+		}
+		.item .symbol3 {
+			top: 65%;
+		}
+		.item .symbol4 {
+			top: 65%;
+			left: 42%;
+		}
+		.item .symbol5 {
+			top: 65%;
+			left: 75%;
+		}
+		.item .symbol6 {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		.item .symbol7 {
+			top: 5%;
+			left: 5%;
+		}
+		.item .symbol8 {
+			top: 35%;
+			left: 5%;
+		}
+		.item .symbol9 {
+			top: 65%;
+			left: 5%;
+		}
+		.item .symbol10 {
+			top: 5%;
+			left: 35%;
+		}
+		.item .symbol11 {
+			top: 35%;
+			left: 35%;
+		}
+		.item .symbol12 {
+			top: 65%;
+			left: 35%;
+		}
+		.item .symbol13 {
+			top: 40%;
+			left: 72%;
+		}
+		.item .symbol14 {
+			top: 5%;
+			left: 15%;
+		}
+		.item .symbol15 {
+			top: 35%;
+			left: 25%;
+		}
+		.item .symbol16 {
+			top: 65%;
+			left: 15%;
+		}
+		.item .symbol17 {
+			top: 5%;
+			left: 65%;
+		}
+		.item .symbol17 p { margin-top: 5px }
+		.item .symbol18 {
+			top: 35%;
+			left: 75%;
+		}
+		.item .symbol18 p { margin-top: -2px }
+		.item .symbol19 {
+			top: 65%;
+			left: 65%;
+		}
+		.item .symbol19 p { margin-top: 8px }
+		.explain {
+			width: 65%;
+			min-height: 200px;
+			background-color: #FFF;
+			border-radius: 30px;
+			border: 5px solid #3976d2;
+			margin: 50px 0 0 100px;
+			position: relative;
+		}
+		.explain .toy img {
+			position: absolute;
+			top: -40px;
+			left: -115px;
+			width: 25%;
+		}
+		.detail {
+			margin: 10px 5px 5px 30px;
+			padding: 20px;
+			font-size: 20px;
+		}
+		.detail .symbol .img {
+			display: inline-block;
+			width: 100px;
+			margin-right: 20px;
+			padding-bottom: 100%;
+			float: left;
+		}
+		.detail .symbol .title {
+			color: #222;
+			font-weight: bold;			
+			margin-bottom: 10px;
+		}
+		.detail .symbol .content {
+			color: #7b7b7b;
+		}
+		.padora { 
+			position: absolute;
+			bottom: 0;
+			right: 50px;
+			width: 15%;
+		}
+		.padora:after {
+			content: '潘朵拉寶盒';
+			display: block;
+			font-size: 20px;
+			font-weight: bold;
+			color: #FFF;
+			text-align: center;
+		}
+		.hexcat {
+			width: 20%;
+			position: absolute;
+			left: 3%;
+			bottom: 7%;
+		}
+		.rocket {
+			width: 15%;
+			position: absolute;
+			right: 12%;
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<section>
+			<div class="item item1">
+				<div class="symbol symbol1">
+					<img src="images/01.png">
+					<p>設計規範</p>
+				</div>
+				<div class="symbol symbol2">
+					<img src="images/02.png">
+					<p>爬梳乾貨</p>
+				</div>
+				<div class="symbol symbol3">
+					<img src="images/03.png">
+					<p>UX思維</p>
+				</div>
+				<div class="symbol symbol4">
+					<img src="images/04.png">
+					<p>設計思考</p>
+				</div>
+				<div class="symbol symbol5">
+					<img src="images/05.png">
+					<p>心理學</p>
+				</div>
+			</div>
+			<div class="item item2">
+				<div class="symbol symbol6">
+					<img src="images/06.png">
+					<p>線框稿</p>
+				</div>
+			</div>
+			<div class="item item3">
+				<div class="symbol symbol7">
+					<img src="images/07.png">
+					<p>插畫</p>
+				</div>
+				<div class="symbol symbol8">
+					<img src="images/08.png">
+					<p>美感</p>
+				</div>
+				<div class="symbol symbol9">
+					<img src="images/09.png">
+					<p>靈感</p>
+				</div>
+				<div class="symbol symbol10">
+					<img src="images/10.png">
+					<p>配色</p>
+				</div>
+				<div class="symbol symbol11">
+					<img src="images/11.png">
+					<p>文案</p>
+				</div>
+				<div class="symbol symbol12">
+					<img src="images/12.png">
+					<p>圖庫</p>
+				</div>
+				<div class="symbol symbol13">
+					<img src="images/13.png">
+					<p>UI設計</p>
+				</div>
+			</div>
+			<div class="item item4">
+				<div class="symbol symbol14">
+					<img src="images/14.png">
+					<p>標註</p>
+				</div>
+				<div class="symbol symbol15">
+					<img src="images/15.png">
+					<p>原型</p>
+				</div>
+				<div class="symbol symbol16">
+					<img src="images/16.png">
+					<p>版本控制</p>
+				</div>
+				<div class="symbol symbol17">
+					<img src="images/17.png">
+					<p>略懂開發</p>
+				</div>
+				<div class="symbol symbol18">
+					<img src="images/18.png">
+					<p>出師</p>
+				</div>
+				<div class="symbol symbol19">
+					<img src="images/19.png">
+					<p>厚黑學</p>
+				</div>
+			</div>
+			<div class="explain">
+				<div class="toy">
+					<img src="images/img_monocat.png">
+				</div>
+				<div class="detail">
+					<div class="symbol">
+						<div class="img">
+							<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+						</div>
+						<p class="title">設計規範</p>
+						<p class="content">設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計</p>
+					</div>
+				</div>
+			</div>
+			<div class="padora"><img src="images/img_padora.png"></div>
+		</section>
+		<div class="hexcat"><img src="images/img_hexcat.png"></div>
+		<div class="rocket"><img src="images/img_rocket.png"></div>
+	</div>
+</body>
+</html>
