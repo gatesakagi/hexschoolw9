@@ -333,8 +333,8 @@
 						<div class="img">
 							<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
 						</div>
-						<p class="title" id="detailTitle">設計規範</p>
-						<p class="content" id="detailContent">設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計規範設計</p>
+						<p class="title" id="detailTitle"></p>
+						<p class="content" id="detailContent"></p>
 					</div>
 				</div>
 			</div>
@@ -366,6 +366,8 @@
 		    	document.getElementById('detailContent').innerText = titleOfp.repeat(15);
 		    } else {
 		    	mask[indexMask] --;
+		    	document.getElementById('detailTitle').innerText = '';
+		    	document.getElementById('detailContent').innerText = '';
 		    }
 		    checkMaskForItem5(mask[3]);
 		    checkMaskForItem4(mask[2]);
